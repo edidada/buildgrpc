@@ -1,5 +1,8 @@
 # /bin/bash
-
+uname -a
+gcc -v
+which gcc
+make -v
 export MY_INSTALL_DIR=$HOME/.local
 mkdir -p $MY_INSTALL_DIR
 export PATH="$PATH:$MY_INSTALL_DIR/bin"
