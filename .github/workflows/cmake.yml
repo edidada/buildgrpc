@@ -38,10 +38,10 @@ jobs:
       # Execute the build.  You can specify a specific target with "--target <NAME>"
       #       cmake --build . --config $BUILD_TYPE
       run: |
-        pwd
-        cd ..
-        ls
-        ./scripts/buildgrpc.sh
+#        pwd
+#        cd ..
+#        ls
+        ../buildgrpc/scripts/buildgrpc.sh
 
     - name: Test
       working-directory: ${{runner.workspace}}/build
