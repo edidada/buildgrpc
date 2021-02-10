@@ -39,8 +39,6 @@ jobs:
       #       cmake --build . --config $BUILD_TYPE
       run: |
         pwd
-#        cd ..
-#        ls
         ../buildgrpc/scripts/buildgrpc.sh
 
     - name: Test
