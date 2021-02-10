@@ -37,7 +37,7 @@ jobs:
       shell: bash
       # Execute the build.  You can specify a specific target with "--target <NAME>"
       #       cmake --build . --config $BUILD_TYPE
-      run: scripts/buildgrpc.sh
+      run: ../scripts/buildgrpc.sh
 
     - name: Test
       working-directory: ${{runner.workspace}}/build
