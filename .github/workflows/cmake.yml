@@ -38,7 +38,7 @@ jobs:
       # Execute the build.  You can specify a specific target with "--target <NAME>"
       #       cmake --build . --config $BUILD_TYPE
       run: |
-        pwd
+        chmod +x ../buildgrpc/scripts/buildgrpc.sh
         ../buildgrpc/scripts/buildgrpc.sh
 
     - name: Test
