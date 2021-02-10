@@ -39,7 +39,7 @@ jobs:
       #       cmake --build . --config $BUILD_TYPE
       run: |
         pwd
-        ./scripts/buildgrpc.sh
+        ../scripts/buildgrpc.sh
 
     - name: Test
       working-directory: ${{runner.workspace}}/build
